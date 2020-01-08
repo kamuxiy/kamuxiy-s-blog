@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kamuxiy.github.io/"/>
-  <updated>2020-01-08T13:29:52.052Z</updated>
+  <updated>2020-01-08T13:47:45.787Z</updated>
   <id>https://kamuxiy.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown格式！</title>
+    <link href="https://kamuxiy.github.io/2020/01/08/%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://kamuxiy.github.io/2020/01/08/格式/</id>
+    <published>2020-01-08T13:45:00.000Z</published>
+    <updated>2020-01-08T13:47:45.787Z</updated>
+    
+    <summary type="html">
+    
+      markdown的基本格式
+    
+    </summary>
+    
+      <category term="转载" scheme="https://kamuxiy.github.io/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="技术" scheme="https://kamuxiy.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>img</title>
