@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kamuxiy.github.io/"/>
-  <updated>2020-01-08T12:50:46.621Z</updated>
+  <updated>2020-01-08T12:59:13.478Z</updated>
   <id>https://kamuxiy.github.io/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>img</title>
+    <link href="https://kamuxiy.github.io/2020/01/08/img/"/>
+    <id>https://kamuxiy.github.io/2020/01/08/img/</id>
+    <published>2020-01-08T12:57:16.000Z</published>
+    <updated>2020-01-08T12:59:13.478Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="https://kamuxiy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>试验！</title>
