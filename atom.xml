@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kamuxiy.github.io/"/>
-  <updated>2020-01-09T05:29:30.217Z</updated>
+  <updated>2020-01-14T14:45:01.144Z</updated>
   <id>https://kamuxiy.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html知识自结（1</title>
+    <link href="https://kamuxiy.github.io/2020/01/14/html%E7%9F%A5%E8%AF%86%E8%87%AA%E7%BB%93%EF%BC%881/"/>
+    <id>https://kamuxiy.github.io/2020/01/14/html知识自结（1/</id>
+    <published>2020-01-14T14:44:00.000Z</published>
+    <updated>2020-01-14T14:45:01.144Z</updated>
+    
+    <summary type="html">
+    
+      Dw安装、html结构、标签、css
+    
+    </summary>
+    
+      <category term="技术" scheme="https://kamuxiy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="自学笔记" scheme="https://kamuxiy.github.io/tags/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始的数据库学习2</title>
