@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: 转载 | 榎木的小窝！</title>
+  <title itemprop="name">html知识自结（2 | 榎木的小窝！</title>
   
     <link rel="shortcut icon" href="/images/favicon-20200108112516267.ico">
   
@@ -280,105 +280,271 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="转载.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://s2.ax1x.com/2020/01/14/lLEJAA.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.ax1x.com/2020/01/14/lLEJAA.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      html知识自结（2</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="">
+          </a>
+        </span>
+        <span>
+          <a href="">kamuxiy</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-1-14<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">转载.zh</h1>
-    <span class="cat-des">
-      <p>转载.en</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/格式/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="html知识自结（2"><a href="#html知识自结（2" class="headerlink" title="html知识自结（2"></a>html知识自结（2</h2><h3 id="3-CSS"><a href="#3-CSS" class="headerlink" title="3.CSS"></a>3.CSS</h3><p>CSS (Cascading Style Sheets) 用于渲染HTML元素标签的样式.</p>
+<blockquote>
+<p>CSS 是在 HTML 4 开始使用的,是为了更好的渲染HTML元素而引入的.<br>CSS 可以通过以下方式添加到HTML中:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>内联样式- 在HTML元素中使用”style” 属性</li>
+<li>内部样式表 -在HTML文档头部 <head><meta name="generator" content="Hexo 3.9.0"> 区域使用<style> 元素 来包含CSS</li>
+<li>外部引用 - 使用外部 CSS 文件<br>最好的方式是通过外部引用CSS文件.</li>
+</ul>
+</blockquote>
+<p>常见的CSS格式有：</p>
+<pre><code class="html">text-align:                     &lt;!--center居中,left左对齐,right右对齐--&gt;
+border-radius:              &lt;!--边角圆滑度--&gt;
+width:                           &lt;!--长度--&gt;
+height:                          &lt;!--宽度--&gt;
+background-color:        &lt;!--背景颜色--&gt;
+border:                         &lt;!--边框颜色--&gt;
+</code></pre>
+<h3 id="4-列表"><a href="#4-列表" class="headerlink" title="4.列表"></a>4.列表</h3><p>列表分无序、有序、定义三种</p>
+<ul>
+<li>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。</li>
+<li>有序列表也是一列项目，列表项目使用数字进行标记。 </li>
+<li>自定义列表不仅仅是一列项目，而是项目及其注释的组合。<pre><code class="html">&lt;!--无序列表--&gt;
+&lt;ul&gt;
+&lt;li&gt;列表中一项&lt;/li&gt;
+&lt;li&gt;列表中另一项&lt;/li&gt;
+&lt;/ul&gt; 
+&lt;!--有序列表--&gt;
+&lt;ol&gt;
+&lt;li&gt;列表第一项&lt;/li&gt;
+&lt;li&gt;列表第二项&lt;/li&gt;
+&lt;/ol&gt; 
+&lt;!--定义列表--&gt;
+&lt;dl&gt;
+&lt;dt&gt;列表第一项&lt;/dt&gt;
+&lt;dd&gt;第一项定义&lt;/dd&gt;
+&lt;dt&gt;列表第二项&lt;/dt&gt;
+&lt;dd&gt;第二项定义&lt;/dd&gt;
+&lt;/dl&gt; 
+</code></pre>
+<h3 id="5-表单（重要"><a href="#5-表单（重要" class="headerlink" title="5.表单（重要"></a>5.表单（重要</h3>HTML 表单用于收集不同类型的用户输入</li>
+<li>表单是一个包含表单元素的区域。</li>
+<li>表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。</li>
+<li>表单使用表单标签 <code>&lt;form&gt;</code> 来设置:<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4>多数情况下被用到的表单标签是输入标签（<input>）。</li>
+</ul>
+<p>输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下：</p>
+<ol>
+<li>文本域<br>就是本文框，可以输入文字，用<input type="text">来设定</li>
+<li>密码字段<br>与本文域类似，但是输入文字不会以明文显示，用<input type="possword">来指定</li>
+<li>单选按钮<br>单选选项框，用<input type="radio">来设定</li>
+<li>复选框<br>复选选项框，用<input type="checkbox">来设定</li>
+<li>提交按钮<br>当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。<br>用<input type="submit">来设定</li>
+<li>重置按钮<br>点击之后会将重置按钮所在的表单中填写的内容重新设置为默认值<br>用<input type="reset">来设定</li>
+</ol>
+<p><em>除此之外表单中的单选按钮可以设置以下几个属性：value、name、checked</em></p>
+<ul>
+<li>value：提交数据到服务器的值（后台程序PHP使用）</li>
+<li>name：为控件命名，以备后台程序 ASP、PHP 使用</li>
+<li>checked：当设置 checked=”checked” 时，该选项被默认选中</li>
+</ul>
+<p><em>例如:</em></p>
+<pre><code class="html">&lt;form&gt;
+&lt;p&gt;你生活在哪个国家？&lt;/p&gt;
+&lt;input type=&quot;radio&quot; name=&quot;country&quot; value=&quot;China&quot; checked=&quot;checked&quot;&gt;中国&lt;br /&gt;
+&lt;input type=&quot;radio&quot; name=&quot;country&quot; value=&quot;the USA&quot;&gt;美国
+&lt;/form&gt;
+</code></pre>
+<p><strong>*注意：**</strong>同一组的单选按钮，name 取值一定要一致，比如上面例子为同一个名称“country”，这样同一组的单选按钮才可以起到单选的作用*</p>
+<h3 id="6-举个栗子"><a href="#6-举个栗子" class="headerlink" title="6.举个栗子"></a>6.举个栗子</h3><pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;数据库提交登入&lt;/title&gt;
+&lt;style&gt;
+#biaoti {
+    text-align: center;
+}
+#biaodan {
+    text-align: center;
+    border: #4CAF50;
+    border-radius: 4px；
+
+}
+#quedinganniu {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+    margin-right:30px
+}
+#chongzhianniu {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+}
+#name {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+}
+#passwork {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+    }
+&lt;/style&gt;
+&lt;meta name=&quot;author&quot; content=&quot;kamuxiy&quot;&gt;
+&lt;/head&gt;
+
+&lt;body id=&quot;body&quot;&gt;
+&lt;div id=&quot;biaoti&quot;&gt;
+  &lt;h1&gt;标题&lt;/h1&gt;
+&lt;/div&gt;
+&lt;!--标题--&gt;
+&lt;div id=&quot;biaodan&quot;&gt;
+  &lt;form name=&quot;input&quot; action=&quot;http://localhost/phpMyAdmin4.8.5/tbl_change.php&quot; method=&quot;post&quot;&gt;
+    &lt;!--名字--&gt;
+    &lt;input type=&quot;text&quot; value=&quot;name&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--密码--&gt;
+    &lt;input type=&quot;$#password&quot; value=&quot;password&quot; name=&quot;password&quot; id=&quot;passwork&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--提交--&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;确定&quot; id=&quot;quedinganniu&quot;&gt;
+
+    &lt;!--重置--&gt;
+    &lt;input type=&quot;reset&quot; name=&quot;button&quot; id=&quot;chongzhianniu&quot; value=&quot;重置&quot;&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+    &lt;div id=&quot;java&quot;&gt; 
+  &lt;script&gt;
+        document.write(&quot;这是一个java实现的段落&quot;)
+    &lt;/script&gt;
+  &lt;noscript&gt;
+  抱歉，您的浏览器不支持JavaScript!
+  &lt;/noscript&gt;
+&lt;/div&gt;
+&lt;!--用java输出--&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</style></head></li></ul></blockquote>
         </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/l2z0FU.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/格式/">
-    markdown格式！</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    markdown的基本格式</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/格式/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://s2.ax1x.com/2020/01/09/lWmJHS.jpg"></li>
+                <li class="wechat-code"><img src="https://s2.ax1x.com/2020/01/09/lWmtAg.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/01/14/html知识自结（1/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://s2.ax1x.com/2020/01/14/lLE1ne.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://s2.ax1x.com/2020/01/14/lLE1ne.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                html知识自结（1</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="kamuxiy" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author">kamuxiy</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一只小白鸽</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/格式/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/l2z0FU.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/格式/">
-    markdown格式！</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    markdown的基本格式</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/格式/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
