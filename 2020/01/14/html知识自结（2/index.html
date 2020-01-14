@@ -316,12 +316,15 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h2 id="html知识自结（2"><a href="#html知识自结（2" class="headerlink" title="html知识自结（2"></a>html知识自结（2</h2><h3 id="3-CSS"><a href="#3-CSS" class="headerlink" title="3.CSS"></a>3.CSS</h3><p>CSS (Cascading Style Sheets) 用于渲染HTML元素标签的样式.<br>CSS 是在 HTML 4 开始使用的,是为了更好的渲染HTML元素而引入的.<br>CSS 可以通过以下方式添加到HTML中:</p>
+          <h2 id="html知识自结（2"><a href="#html知识自结（2" class="headerlink" title="html知识自结（2"></a>html知识自结（2</h2><h3 id="3-CSS"><a href="#3-CSS" class="headerlink" title="3.CSS"></a>3.CSS</h3><p>CSS (Cascading Style Sheets) 用于渲染HTML元素标签的样式.</p>
+<blockquote>
+<p>CSS 是在 HTML 4 开始使用的,是为了更好的渲染HTML元素而引入的.<br>CSS 可以通过以下方式添加到HTML中:</p>
 <ul>
-<li>内联样式- 在HTML元素中使用”style” 属性</li>
-<li>内部样式表 -在HTML文档头部 <head><meta name="generator" content="Hexo 3.9.0"> 区域使用<style> 元素 来包含CSS</li>
-<li>外部引用 - 使用外部 CSS 文件<br>最好的方式是通过外部引用CSS文件.</li>
+<li>内联样式 在HTML元素中使用”style” 属性</li>
+<li>内部样式表 在HTML文档头部 <code>&lt;head&gt;</code>区域使用<code>&lt;style&gt;</code>元素来包含CSS</li>
+<li>外部引用 使用外部 CSS 文件<br>最好的方式是通过外部引用CSS文件</li>
 </ul>
+</blockquote>
 <p>常见的CSS格式有：</p>
 <pre><code class="html">text-align:                     &lt;!--center居中,left左对齐,right右对齐--&gt;
 border-radius:              &lt;!--边角圆滑度--&gt;
@@ -355,16 +358,16 @@ border:                         &lt;!--边框颜色--&gt;
 <h3 id="5-表单（重要"><a href="#5-表单（重要" class="headerlink" title="5.表单（重要"></a>5.表单（重要</h3>HTML 表单用于收集不同类型的用户输入</li>
 <li>表单是一个包含表单元素的区域。</li>
 <li>表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。</li>
-<li>表单使用表单标签 <code>&lt;form&gt;</code> 来设置:<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4>多数情况下被用到的表单标签是输入标签（<input>）。</li>
+<li>表单使用表单标签 <code>&lt;form&gt;</code> 来设置:<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4>多数情况下被用到的表单标签是输入标签<code>&lt;input&gt;</code></li>
 </ul>
 <p>输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下：</p>
 <ol>
-<li>文本域<br>就是本文框，可以输入文字，用<input type="text">来设定</li>
-<li>密码字段<br>与本文域类似，但是输入文字不会以明文显示，用<input type="possword">来指定</li>
-<li>单选按钮<br>单选选项框，用<input type="radio">来设定</li>
-<li>复选框<br>复选选项框，用<input type="checkbox">来设定</li>
-<li>提交按钮<br>当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。<br>用<input type="submit">来设定</li>
-<li>重置按钮<br>点击之后会将重置按钮所在的表单中填写的内容重新设置为默认值<br>用<input type="reset">来设定</li>
+<li>文本域<br>就是本文框，可以输入文字，用<code>&lt;input type=&quot;text&quot;&gt;</code>来设定</li>
+<li>密码字段<br>与本文域类似，但是输入文字不会以明文显示，用<code>&lt;input type=&quot;possword&quot;&gt;</code>来指定</li>
+<li>单选按钮<br>单选选项框，用<code>&lt;input type=&quot;radio&quot;&gt;</code>来设定</li>
+<li>复选框<br>复选选项框，用<code>&lt;input type=&quot;checkbox&quot;&gt;</code>来设定</li>
+<li>提交按钮<br>当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。<br>用<code>&lt;input type=&quot;submit&quot;&gt;</code>来设定</li>
+<li>重置按钮<br>点击之后会将重置按钮所在的表单中填写的内容重新设置为默认值<br>用<code>&lt;input type=&quot;reset&quot;&gt;</code>来设定</li>
 </ol>
 <p><em>除此之外表单中的单选按钮可以设置以下几个属性：value、name、checked</em></p>
 <ul>
@@ -459,7 +462,7 @@ border:                         &lt;!--边框颜色--&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-</style></head></li></ul>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
