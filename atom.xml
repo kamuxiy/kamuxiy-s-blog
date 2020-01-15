@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kamuxiy.github.io/"/>
-  <updated>2020-01-15T07:04:12.360Z</updated>
+  <updated>2020-01-15T07:02:30.007Z</updated>
   <id>https://kamuxiy.github.io/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>前端登录表单提交界面设计</title>
-    <link href="https://kamuxiy.github.io/2020/01/15/##%20%E5%89%8D%E7%AB%AF%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1/"/>
-    <id>https://kamuxiy.github.io/2020/01/15/## 前端登录界面设计/</id>
-    <published>2020-01-15T06:59:00.000Z</published>
-    <updated>2020-01-15T07:04:12.360Z</updated>
-    
-    <summary type="html">
-    
-      html·CSS
-    
-    </summary>
-    
-      <category term="技术" scheme="https://kamuxiy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="自学笔记" scheme="https://kamuxiy.github.io/tags/%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
   
   <entry>
     <title>前端登录表单提交界面设计</title>
@@ -81,7 +61,7 @@
     <link href="https://kamuxiy.github.io/2020/01/14/html%E7%9F%A5%E8%AF%86%E8%87%AA%E7%BB%93%EF%BC%881/"/>
     <id>https://kamuxiy.github.io/2020/01/14/html知识自结（1/</id>
     <published>2020-01-14T14:44:00.000Z</published>
-    <updated>2020-01-15T05:43:05.016Z</updated>
+    <updated>2020-01-15T07:06:49.517Z</updated>
     
     <summary type="html">
     
