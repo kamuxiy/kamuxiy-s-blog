@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: 技术 | 榎木的小窝！</title>
+  <title itemprop="name">前端登录表单提交界面设计 | 榎木的小窝！</title>
   
     <link rel="shortcut icon" href="/images/favicon-20200108112516267.ico">
   
@@ -280,501 +280,270 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://i.loli.net/2020/01/15/ivsTMg294u8NjdL.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://i.loli.net/2020/01/15/ivsTMg294u8NjdL.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      前端登录表单提交界面设计</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="">
+          </a>
+        </span>
+        <span>
+          <a href="">kamuxiy</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-1-15<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">野生技术协会</h1>
-    <span class="cat-des">
-      <p>Geek – Only for Love</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="前端登录界面设计"><a href="#前端登录界面设计" class="headerlink" title="前端登录界面设计"></a>前端登录界面设计</h2><p>具体效果是这样：</p>
+<p><img src="https://s2.ax1x.com/2020/01/15/lOD52n.png" alt></p>
+<h3 id="1-html文件创建"><a href="#1-html文件创建" class="headerlink" title="1.html文件创建"></a>1.html文件创建</h3><p>新建一个html文档</p>
+<p>输入基本结构</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;一个表格&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<h3 id="2-插入表单"><a href="#2-插入表单" class="headerlink" title="2.插入表单"></a>2.插入表单</h3><p>插入<code>&lt;form&gt;</code>来插入几个表单：</p>
+<ul>
+<li>用户名</li>
+<li>密码</li>
+<li>提交</li>
+<li>重置<br>用<code>&lt;div&gt;</code>划为一块命名为biaodan<br>吧四个部分分别命名</li>
+</ul>
+<pre><code class="html">&lt;div id=&quot;biaodan&quot;&gt;
+  &lt;form name=&quot;input&quot; action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;!--用户名--&gt;
+    &lt;input type=&quot;text&quot; value=&quot;name&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--密码--&gt;
+    &lt;input type=&quot;$#password&quot; value=&quot;password&quot; name=&quot;password&quot; id=&quot;passwork&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--提交--&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;确定&quot; id=&quot;quedinganniu&quot;&gt;
+    &lt;!--重置--&gt;
+    &lt;input type=&quot;reset&quot; name=&quot;button&quot; id=&quot;chongzhianniu&quot; value=&quot;重置&quot;&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+<p>大概现在效果就是这样：<br><img src="https://s2.ax1x.com/2020/01/15/lOcap4.png" alt><br>接下来使用CSS进行一些美化</p>
+<h3 id="3-美化"><a href="#3-美化" class="headerlink" title="3.美化"></a>3.美化</h3><p>在head部分插入<code>&lt;style&gt;</code>来进行一些美化</p>
+<pre><code class="html">&lt;style&gt;
+
+#biaodan { 
+    text-align: center; 
+    border: #4CAF50;    
+    border-radius: 4px；
+
+}
+#quedinganniu {
+    background-color: #4CAF50;  
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+    margin-right:30px
+}
+#chongzhianniu {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+}
+#name {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+}
+#passwork {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+    }
+&lt;/style&gt;
+</code></pre>
+<p>设定</p>
+<ul>
+<li>表单的输入框边角弧度、长高</li>
+<li>按钮颜色、边框弧度、边框颜色、长高</li>
+<li>按钮距离位置</li>
+</ul>
+<p>最后效果就是这样：<br><img src="https://s2.ax1x.com/2020/01/15/lOD52n.png" alt></p>
+<h3 id="4-完整代码"><a href="#4-完整代码" class="headerlink" title="4.完整代码"></a>4.完整代码</h3><pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;表单登录提交前端设计&lt;/title&gt;
+&lt;style&gt;
+#biaodan {
+    text-align: center;
+    border: #4CAF50;
+    border-radius: 4px；
+
+}
+#quedinganniu {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+    margin-right:30px
+}
+#chongzhianniu {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    border: #4CAF50;
+}
+#name {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+}
+#passwork {
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+    }
+&lt;/style&gt;
+&lt;meta name=&quot;author&quot; content=&quot;kamuxiy&quot;&gt;
+&lt;/head&gt;
+
+&lt;body id=&quot;body&quot;&gt;
+&lt;div id=&quot;biaodan&quot;&gt;
+  &lt;form name=&quot;input&quot; action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;!--名字--&gt;
+    &lt;input type=&quot;text&quot; value=&quot;name&quot; name=&quot;name&quot; id=&quot;name&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--密码--&gt;
+    &lt;input type=&quot;$#password&quot; value=&quot;password&quot; name=&quot;password&quot; id=&quot;passwork&quot;&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;!--提交--&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;确定&quot; id=&quot;quedinganniu&quot;&gt;
+
+    &lt;!--重置--&gt;
+    &lt;input type=&quot;reset&quot; name=&quot;button&quot; id=&quot;chongzhianniu&quot; value=&quot;重置&quot;&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://s2.ax1x.com/2020/01/09/lWmJHS.jpg"></li>
+                <li class="wechat-code"><img src="https://s2.ax1x.com/2020/01/09/lWmtAg.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/01/14/html知识自结（2/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://i.loli.net/2020/01/15/8yVgRufPdeh4Fwq.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://i.loli.net/2020/01/15/8yVgRufPdeh4Fwq.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                html知识自结（2</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/15/## 前端登录界面设计/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/ivsTMg294u8NjdL.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/15/## 前端登录界面设计/">
-    前端登录表单提交界面设计</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-15</div>
-    <p>
-    html·CSS</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/15/## 前端登录界面设计/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/14/html知识自结（2/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/8yVgRufPdeh4Fwq.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/14/html知识自结（2/">
-    html知识自结（2</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-14</div>
-    <p>
-    CSS、列表、表单、再举个栗子</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/14/html知识自结（2/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/14/html知识自结（1/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/R4Ple7JhpXSk2Va.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/14/html知识自结（1/">
-    html知识自结（1</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-14</div>
-    <p>
-    Dw安装、html结构、标签</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/14/html知识自结（1/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/09/phpstudy MySQL/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/lu2raAEiVIRZomJ.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/09/phpstudy MySQL/">
-    从零开始的数据库学习2</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-9</div>
-    <p>
-    学习并练习使用数据库：phpstudy MySQL安装与使用</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/09/phpstudy MySQL/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/数据库笔记1/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/lRen3t.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/数据库笔记1/">
-    从零开始的数据库学习1</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    学习并练习使用数据库：重要名词</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/数据库笔记1/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/这是试验的一篇文章/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/这是试验的一篇文章/">
-    试验！</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    这里做一些测试</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/这是试验的一篇文章/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2018/12/12/Hexo-Theme-Sakura/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/l2vLjI.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2018/12/12/Hexo-Theme-Sakura/">
-    Hexo-Theme-Sakura</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2018-12-12</div>
-    <p>
-    hexo-sakura主题使用教程</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="kamuxiy" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author">kamuxiy</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一只小白鸽</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/15/## 前端登录界面设计/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/ivsTMg294u8NjdL.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/15/## 前端登录界面设计/">
-    前端登录表单提交界面设计</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-15</div>
-    <p>
-    html·CSS</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/15/## 前端登录界面设计/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/14/html知识自结（2/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/8yVgRufPdeh4Fwq.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/14/html知识自结（2/">
-    html知识自结（2</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-14</div>
-    <p>
-    CSS、列表、表单、再举个栗子</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/14/html知识自结（2/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/14/html知识自结（1/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/R4Ple7JhpXSk2Va.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/14/html知识自结（1/">
-    html知识自结（1</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-14</div>
-    <p>
-    Dw安装、html结构、标签</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/14/html知识自结（1/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/09/phpstudy MySQL/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://i.loli.net/2020/01/15/lu2raAEiVIRZomJ.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/09/phpstudy MySQL/">
-    从零开始的数据库学习2</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-9</div>
-    <p>
-    学习并练习使用数据库：phpstudy MySQL安装与使用</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/09/phpstudy MySQL/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/数据库笔记1/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/lRen3t.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/数据库笔记1/">
-    从零开始的数据库学习1</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    学习并练习使用数据库：重要名词</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/数据库笔记1/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2020/01/08/这是试验的一篇文章/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2020/01/08/这是试验的一篇文章/">
-    试验！</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2020-1-8</div>
-    <p>
-    这里做一些测试</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2020/01/08/这是试验的一篇文章/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2018/12/12/Hexo-Theme-Sakura/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://s2.ax1x.com/2020/01/08/l2vLjI.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2018/12/12/Hexo-Theme-Sakura/">
-    Hexo-Theme-Sakura</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2018-12-12</div>
-    <p>
-    hexo-sakura主题使用教程</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
