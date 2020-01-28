@@ -320,7 +320,8 @@
 <blockquote>
 <p><strong>超快速度</strong><br>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染<br><strong>一键部署</strong><br>只需一条指令即可部署到 GitHub Pages, Heroku 或其他平台。<br><strong>支持 Markdown</strong><br>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。<br><strong>插件和可扩展性</strong><br>强大的 API 带来无限的可能，与数种模板引擎（EJS，Pug，Nunjucks）和工具（Babel，PostCSS，Less/Sass）轻易集成</p>
 </blockquote>
-<h2 id="这个博客的框架就是hexo"><a href="#这个博客的框架就是hexo" class="headerlink" title="这个博客的框架就是hexo"></a>这个博客的框架就是hexo</h2><h2 id="开始来搭建自己的小窝吧！"><a href="#开始来搭建自己的小窝吧！" class="headerlink" title="开始来搭建自己的小窝吧！"></a>开始来搭建自己的小窝吧！</h2><p>参考教程：<br><a href="https://www.bilibili.com/video/av24897960?p=1&amp;share_medium=android&amp;share_source=qq&amp;bbid=XYFC9E5FC0F1E991BCDD2662CD49465BE6943&amp;ts=1578389938252" target="_blank" rel="noopener">手把手教你搭建属于自己的hexo+github博客-hojun_cn</a></p>
+<p>这个博客的框架就是hexo</p>
+<h2 id="开始来搭建自己的小窝吧！"><a href="#开始来搭建自己的小窝吧！" class="headerlink" title="开始来搭建自己的小窝吧！"></a>开始来搭建自己的小窝吧！</h2><p>参考教程：<br><a href="https://www.bilibili.com/video/av24897960?p=1&amp;share_medium=android&amp;share_source=qq&amp;bbid=XYFC9E5FC0F1E991BCDD2662CD49465BE6943&amp;ts=1578389938252" target="_blank" rel="noopener">手把手教你搭建属于自己的hexo+github博客-hojun_cn</a></p>
 <h3 id="1-安装nodejs"><a href="#1-安装nodejs" class="headerlink" title="1. 安装nodejs"></a>1. 安装nodejs</h3><p>在<a href="http://nodejs.cn/" target="_blank" rel="noopener">这里</a>下载文档（安装包）并按默认设置安装</p>
 <p>按<kbd>win</kbd>+<kbd>R</kbd>调出运行</p>
 <p>输入<code>cmd</code>来打开<strong>命令提示符</strong></p>
@@ -365,22 +366,27 @@
 </code></pre>
 <p>等待安装完成</p>
 <p>完成后输入这个</p>
-<pre><code>hexo init 你的博客名
-</code></pre><p>来设置博客名</p>
-<pre><code>cd 你的博客名
-</code></pre><p>来移动到你的博客目录下</p>
-<pre><code>npm install
-</code></pre><p>来安装依赖</p>
-<pre><code>npm install hexo-deployer-git --save
-</code></pre><p>安装插件</p>
+<pre><code class="bash">hexo init 你的博客名
+</code></pre>
+<p>来设置博客名</p>
+<pre><code class="bash">cd 你的博客名
+</code></pre>
+<p>来移动到你的博客目录下</p>
+<pre><code class="bash">npm install
+</code></pre>
+<p>来安装依赖</p>
+<pre><code class="bash">npm install hexo-deployer-git --save
+</code></pre>
+<p>安装插件</p>
 <p>这样就算安装完成了</p>
-<pre><code>输入这个来预览一下
+<pre><code class="bash">输入这个来预览一下
 hexo s -p 端口
 比如：
 hexo s -p 5555
 用浏览器打开http://localhost:5555/
 就可以看见了
-</code></pre><h3 id="6-sublime安装"><a href="#6-sublime安装" class="headerlink" title="6.sublime安装"></a>6.sublime安装</h3><p>在<a href="http://www.sublimetext.cn/" target="_blank" rel="noopener">这里</a>下载</p>
+</code></pre>
+<h3 id="6-sublime安装"><a href="#6-sublime安装" class="headerlink" title="6.sublime安装"></a>6.sublime安装</h3><p>在<a href="http://www.sublimetext.cn/" target="_blank" rel="noopener">这里</a>下载</p>
 <p>按默认设置安装</p>
 <p>打开sublime，将博客目录拖到窗口中就可以编辑了</p>
 <p>博客文章在<code>你的博客名-&gt;source-&gt;_pstes</code>目录下</p>
@@ -405,13 +411,15 @@ hexo s -p 5555
 <pre><code class="yml">author: 你的名称
 </code></pre>
 <p>这样就设置好了</p>
-<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><pre><code>hexo g
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><pre><code class="bash">hexo g
 hexo d
-</code></pre><p>以后每次写好博客后运行一下上面两个就行啦</p>
+</code></pre>
+<p>以后每次写好博客后运行一下上面两个就行啦</p>
 <h4 id="第一次使用部署提交"><a href="#第一次使用部署提交" class="headerlink" title="第一次使用部署提交"></a><strong><em>第一次使用部署提交</em></strong></h4><p>如果第一次hexo d报错，按照提示需要运行下面两个</p>
-<pre><code>git config --global user.email &quot;你的邮箱&quot;
+<pre><code class="bash">git config --global user.email &quot;你的邮箱&quot;
 git config --global user.name &quot;你的用户名&quot;
-</code></pre><p>再次hexo d</p>
+</code></pre>
+<p>再次hexo d</p>
 <p>会跳出对话框，输入GitHub用户名密码后点<kbd>Login</kbd></p>
 <p>如果没有黄色或者红色报错就证明提交成功</p>
 <p>输入网站<code>https://你的博客名.github.io</code>就能进入你的博客啦！</p>
