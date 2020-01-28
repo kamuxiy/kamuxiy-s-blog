@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kamuxiy.github.io/"/>
-  <updated>2020-01-22T09:44:49.526Z</updated>
+  <updated>2020-01-28T11:45:23.554Z</updated>
   <id>https://kamuxiy.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建个人github&amp;hexo主页！</title>
+    <link href="https://kamuxiy.github.io/2020/01/28/%E6%90%AD%E5%BB%BA%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B/"/>
+    <id>https://kamuxiy.github.io/2020/01/28/搭建这个博客的过程/</id>
+    <published>2020-01-28T11:44:00.000Z</published>
+    <updated>2020-01-28T11:45:23.554Z</updated>
+    
+    <summary type="html">
+    
+      这是我历经两天搭建和完善这个小窝的过程与遇到的问题，希望给有想尝试这方面的人一些帮助
+    
+    </summary>
+    
+      <category term="技术" scheme="https://kamuxiy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="https://kamuxiy.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>窝的b站视频！</title>
