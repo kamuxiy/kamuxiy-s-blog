@@ -415,7 +415,7 @@ hexo s -p 5555
 hexo d
 </code></pre>
 <p>以后每次写好博客后运行一下上面两个就行啦</p>
-<h4 id="第一次使用部署提交"><a href="#第一次使用部署提交" class="headerlink" title="第一次使用部署提交"></a><strong><em>第一次使用部署提交</em></strong></h4><p>如果第一次hexo d报错，按照提示需要运行下面两个</p>
+<h3 id="第一次使用部署提交报错解决方法"><a href="#第一次使用部署提交报错解决方法" class="headerlink" title="第一次使用部署提交报错解决方法"></a><strong><em>第一次使用部署提交报错解决方法</em></strong></h3><p>如果第一次hexo d报错，按照提示需要运行下面两个</p>
 <pre><code class="bash">git config --global user.email &quot;你的邮箱&quot;
 git config --global user.name &quot;你的用户名&quot;
 </code></pre>
@@ -423,6 +423,11 @@ git config --global user.name &quot;你的用户名&quot;
 <p>会跳出对话框，输入GitHub用户名密码后点<kbd>Login</kbd></p>
 <p>如果没有黄色或者红色报错就证明提交成功</p>
 <p>输入网站<code>https://你的博客名.github.io</code>就能进入你的博客啦！</p>
+<h3 id="hexo下载速度缓慢解决方法"><a href="#hexo下载速度缓慢解决方法" class="headerlink" title="hexo下载速度缓慢解决方法"></a><strong><em>hexo下载速度缓慢解决方法</em></strong></h3><p>参考<a href="https://blog.csdn.net/ibmall/article/details/81390639" target="_blank" rel="noopener">这里</a></p>
+<p>在下载前先输入这个：</p>
+<pre><code class="bash">npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<p>再下载</p>
 <hr>
 
         </div>
